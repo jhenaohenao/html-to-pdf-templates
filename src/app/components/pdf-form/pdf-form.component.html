@@ -1,0 +1,34 @@
+<!-- Título del Encabezado -->
+<mat-form-field appearance="fill">
+  <mat-label>Título del Encabezado</mat-label>
+  <input matInput [(ngModel)]="headerTitle">
+</mat-form-field>
+
+<!-- Sección 1 -->
+<h3>Sección 1</h3>
+<mat-form-field appearance="fill">
+  <mat-label>Título Sección 1</mat-label>
+  <input matInput [(ngModel)]="section1Title">
+</mat-form-field>
+<mat-form-field appearance="fill">
+  <mat-label>URL de Imagen Sección 1</mat-label>
+  <input matInput [(ngModel)]="section1ImageUrl">
+</mat-form-field>
+<mat-form-field appearance="fill">
+  <mat-label>Descripción Sección 1</mat-label>
+  <textarea matInput [(ngModel)]="section1Desc"></textarea>
+</mat-form-field>
+
+<!-- Sección 2 -->
+<h3>Sección 2</h3>
+<!-- Aquí puedes seguir el mismo patrón para la Sección 2, Sección 3, etc. -->
+
+<!-- ... -->
+
+<!-- Pie de página -->
+<mat-form-field appearance="fill">
+  <mat-label>Texto del Pie de página</mat-label>
+  <input matInput [(ngModel)]="footerText">
+</mat-form-field>
+
+<button mat-raised-button (click)="sendToAPI()">Enviar</button>
